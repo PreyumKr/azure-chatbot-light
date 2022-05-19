@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <script src="./webchat.js"></script>
+</head>
+<body>
+  <div style="position: center; height: 96vh; width: 96vw; border: 1px solid black;" id="webchat" role="main"></div>
+  <script>
+     // Set  the CSS rules.
+     const styleSet = window.WebChat.createStyleSet({
+        // rootHeight: '100%',
+        // rootWidth: '100%',
+           bubbleBorderRadius: 6,
+           bubbleFromUserBorderRadius: 6,
+           sendBoxBorderTop: void 0,
+           
+      });
+
+    window.WebChat.renderWebChat({
+      directLine: window.WebChat.createDirectLine({
+          secret: 'sbSc6oxpRF4.4qNsQYRcQ8DgQHTo-WFG2OKOxa8t5wmsMq2aGQkaYIY'}),
+      styleSet
+    }, document.getElementById('webchat'));
+    
+  </script>
+</body>
